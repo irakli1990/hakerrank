@@ -26,29 +26,27 @@ public class Solution000002 {
     static int H;
     private static final Scanner scanner = new Scanner(System.in);
 
-   static  {
+    static {
         flag = false;
         B = scanner.nextInt();
         H = scanner.nextInt();
         scanner.skip("(\r\n|[\n\r\u2028\u2029\u0085])?");
-        if(H <= 0 | B <= 0){
+        if (H <= 0 | B <= 0) {
             try {
                 flag = false;
                 throw new Exception("java.lang.Exception: Breadth and height must be positive");
             } catch (Exception exception) {
                 System.out.println(exception.getMessage());
             }
-        }else {
+        } else {
             flag = true;
         }
     }
 
 
-
-
     public static void main(String[] args) {
-        if(flag){
-            int area=B*H;
+        if (flag) {
+            int area = B * H;
             System.out.print(area);
         }
         scanner.close();
