@@ -20,7 +20,11 @@ public class Solution0001 {
         } else {
             System.out.println("No");
         }
+
+        String aCapital = A.substring(0,1).toUpperCase();
+        String bCapital = B.substring(0,1).toUpperCase();
         
+        System.out.println(aCapital + " " + bCapital);
     }
 
 }
